@@ -1,0 +1,214 @@
+{
+  "Register": [
+    {
+      "fname": "Gouri",
+      "lname": "Suryawanshi",
+      "email": "gouri23519@gmail.com",
+      "phone": "8669022053",
+      "pass": "Ri85@kjlk;",
+      "d1": "MBBs",
+      "d2": "md",
+      "d3": "",
+      "onlineFee": 450,
+      "personFee": 2345,
+      "experience": "",
+      "startDate": "",
+      "endDate": "",
+      "items": [
+        {
+          "dt": ""
+        }
+      ],
+      "id": 1
+    },
+    {
+      "fname": "Jeff",
+      "lname": "Bezons",
+      "email": "jeff@gmail.com",
+      "phone": "8975432561",
+      "pass": "Goi9$%gf",
+      "d1": "MBBS",
+      "d2": "MS(Cardionology)",
+      "d3": "",
+      "onlineFee": 1500,
+      "personFee": 2000,
+      "experienceYears": "",
+      "startDate": "",
+      "endDate": "",
+      "items": [
+        {
+          "dt": ""
+        }
+      ],
+      "id": 3
+    },
+    {
+      "fname": "sindhu",
+      "lname": "verma",
+      "email": "sindhu@gmail.com",
+      "phone": "8975432561",
+      "pass": "Goi9$%gf",
+      "d1": "MBBS",
+      "d2": "MS(Cardionology)",
+      "d3": "",
+      "onlineFee": 1589,
+      "personFee": 2010,
+      "experienceYears": "",
+      "startDate": "",
+      "endDate": "",
+      "items": [
+        {
+          "dt": "Diabetology"
+        }
+      ],
+      "id": 4
+    },
+    {
+      "fname": "ajay",
+      "lname": "kaul",
+      "email": "ajay@gmail.com",
+      "phone": "8975432561",
+      "pass": "Goi9$%gf",
+      "d1": "MBBS",
+      "d2": "MS(Cardionology)",
+      "d3": "",
+      "onlineFee": 1598,
+      "personFee": 2021,
+      "experienceYears": "",
+      "startDate": "",
+      "endDate": "",
+      "items": [
+        {
+          "dt": "neurosergery"
+        }
+      ],
+      "id": 5
+    },
+    {
+      "fname": "Ashok",
+      "lname": "Seth",
+      "email": "ashok@gmail.com",
+      "phone": "8975432561",
+      "pass": "Goi9$%gf",
+      "d1": "MBBS",
+      "d2": "MS(Cardionology)",
+      "d3": "",
+      "onlineFee": 1606,
+      "personFee": 2027,
+      "experienceYears": "",
+      "startDate": "",
+      "endDate": "",
+      "items": [
+        {
+          "dt": "neurosergery"
+        }
+      ],
+      "id": 6
+    },
+    {
+      "fname": "Rana",
+      "lname": "Phatir",
+      "email": "rana@gmail.com",
+      "phone": "8975432561",
+      "pass": "Goi9$%gf",
+      "d1": "MBBS",
+      "d2": "MS(Cardionology)",
+      "d3": "",
+      "onlineFee": 1606,
+      "personFee": 2027,
+      "experienceYears": "",
+      "startDate": "",
+      "endDate": "",
+      "items": [
+        {
+          "dt": "neurosergery"
+        }
+      ],
+      "id": 7
+    },
+    {
+      "fname": "",
+      "lname": "",
+      "email": "",
+      "phone": "",
+      "pass": "",
+      "d1": "",
+      "d2": "",
+      "d3": "",
+      "onlineFee": "",
+      "personFee": "",
+      "startDate": "",
+      "endDate": "",
+      "experience": null,
+      "items": [
+        {
+          "dt": ""
+        }
+      ],
+      "id": 8
+    },
+    {
+      "fname": "",
+      "lname": "",
+      "email": "",
+      "phone": "",
+      "pass": "",
+      "d1": "",
+      "d2": "",
+      "d3": "",
+      "onlineFee": "",
+      "personFee": "",
+      "startDate": "",
+      "endDate": "",
+      "experience": null,
+      "items": [
+        {
+          "dt": ""
+        }
+      ],
+      "id": 9
+    },
+    {
+      "fname": "",
+      "lname": "",
+      "email": "",
+      "phone": "",
+      "pass": "",
+      "d1": "",
+      "d2": "",
+      "d3": "",
+      "onlineFee": "",
+      "personFee": "",
+      "startDate": "",
+      "endDate": "",
+      "experience": null,
+      "items": [
+        {
+          "dt": ""
+        }
+      ],
+      "id": 10
+    },
+    {
+      "fname": "",
+      "lname": "",
+      "email": "",
+      "phone": "",
+      "pass": "",
+      "d1": "",
+      "d2": "",
+      "d3": "",
+      "onlineFee": "",
+      "personFee": "",
+      "startDate": "",
+      "endDate": "",
+      "experience": null,
+      "items": [
+        {
+          "dt": ""
+        }
+      ],
+      "id": 11
+    }
+  ]
+}

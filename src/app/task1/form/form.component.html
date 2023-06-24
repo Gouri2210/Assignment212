@@ -1,0 +1,148 @@
+
+<form [formGroup] = "myForm"  (ngSubmit)="onSubmitData() ">
+    <div>
+        <label>First Name: </label><span class="feedback">*</span>
+        <br>
+        <input type="text" name="fname" formControlName="fname" class="horizontal"
+        required [ngClass]="{'is-invalid': isSubmitted && f.fname.errors}">
+        
+        <div *ngIf="isSubmitted && f.fname.errors?.required && f.fname.touched" class="invalid-feedback">
+            First Name is Required
+        </div> 
+    </div>
+
+    <div class="form-group">
+        <label for="lastName">Last Name:</label><span class="feedback">*</span>
+        <input type="text" name="lname"  formControlName="lname" class="horizontal"
+        required [ngClass]="{'is-invalid': isSubmitted && f.lname.errors}">
+        
+        <div *ngIf="isSubmitted && f.lname.errors?.required" class="invalid-feedback">
+            Last Name is Required
+        </div> 
+    </div>
+    
+    <div class="form-group">
+        <label>Email: </label><span class="feedback">*</span>
+        <input type="email" name="email" formControlName="email" class="horizontal"
+        required [ngClass]="{'is-invalid': isSubmitted && f.email.errors}" >
+        <div *ngIf="isSubmitted && f.email.errors?.required" class="invalid-feedback">
+            Email is Required
+        </div>
+        <div *ngIf="isSubmitted && f.email.errors?.pattern" class="invalid-feedback">
+            Please Enter Valid Email
+        </div>
+    </div>
+
+    <div >
+    <label for="phone">Phone Number:</label><span class="feedback">*</span>
+    <input type="tel" id="phone" formControlName="phone" class="horizontal" 
+    required [ngClass]="{'is-invalid': isSubmitted && f.phone.errors}">
+  
+    <div *ngIf="isSubmitted && f.phone.errors?.required" class="invalid-feedback">
+        Phone number is required.
+      </div>
+      <div *ngIf="isSubmitted && f.phone.errors?.pattern" class="invalid-feedback">
+        Invalid phone number format. Please enter a 10-digit number.
+      </div>
+    </div>
+
+   
+
+    <div >
+        <label for="password" >Password:</label><span class="feedback">*</span>
+        <input type="password" name="pass"  formControlName="pass" class="horizontal"
+        required [ngClass]="{'is-invalid': isSubmitted && f.pass.errors}"  >
+        <div *ngIf="isSubmitted && f.pass.errors?.required" class="invalid-feedback">
+            Password is Required
+        </div>
+        <div *ngIf="isSubmitted && f.pass.errors?.pattern" class="invalid-feedback">
+            Use minimum 8 character, use at least 1 special char and use at least one digit
+        </div>
+    </div>
+
+<!-- ****************************** Calculate date experience********************** -->
+    <!-- <div>
+        <label for="">Date of Graduation</label>
+        <input type="date" id="datepicker" name="startDate" class="horizontal" formControlName="startDate">
+
+        <button (click)="calculateExperience()">Calculate Experience</button>
+
+    </div> -->
+    <div [formGroup]="timeForm">
+      <label for="startDate">Start Date:</label>
+      <input type="date" id="startDate" formControlName="startDate">
+    
+      <label for="endDate">End Date:</label>
+      <input type="date" id="endDate" formControlName="endDate" >
+
+      <input type="hidden" name="experience" formControlName="experience" >
+      <button type="button" (click)="calculateExperience()" >Calculate Experience</button>
+    
+      <div *ngIf="experienceYears !== null">
+        <p>Experience: {{ experienceYears }} years</p>
+      </div>
+    </div>
+
+
+  <!-- **************************************************************************** -->
+
+    <label >Degree 1</label><span class="feedback">*</span>
+    <input type="text" name="d1"  formControlName="d1" class="horizontal"
+    required [ngClass]="{'is-invalid': isSubmitted && f.d1.errors}" >
+    <div *ngIf="isSubmitted && f.d1.errors?.required" class="invalid-feedback">
+        First degree is Required
+    </div>
+    <label >Degree 2</label><span class="feedback">*</span>
+    <input type="text" name="d2" formControlName="d2" class="horizontal"
+    required [ngClass]="{'is-invalid': isSubmitted && f.d2.errors}" >
+    <div *ngIf="isSubmitted && f.d2.errors?.required" class="invalid-feedback">
+        Degree is Required
+    </div>
+
+    <br>
+
+    
+      <div formArrayName="items"
+        *ngFor="let item of myForm.controls['items'].controls; let i = index">
+        <div [formGroupName]="i">
+          <input formControlName='dt' class="horizontal" placeholder="Add degree here" required [ngClass]="{'is-invalid': isSubmitted && f.dt.errors}">
+          <div *ngIf="isSubmitted && f.dt.errors?.required" class="invalid-feedback">
+            Degree is required
+            </div>
+        </div>
+      </div>
+    <button type="button" (click)="showbutton()" class="addBtn">Add another</button>
+    
+        
+
+      <br>
+      <br>
+        <label for="">Online Consult Fee</label>
+        <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text">
+               <img style="height: 25px; width: 25px;" src="https://th.bing.com/th?id=OIP.GpSO2zrAVjeEHDeJHne0MAHaE8&w=305&h=204&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2">
+              </span>
+            </div>
+            <input type="number" class="form-control"  placeholder="Enter value" formControlName="onlineFee">
+          </div>
+
+
+          <br>
+          <br>
+            <label for="">Person Consult Fee</label>
+            <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">
+                   <img style="height: 25px; width: 25px;" src="https://th.bing.com/th?id=OIP.GpSO2zrAVjeEHDeJHne0MAHaE8&w=305&h=204&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2">
+                  </span>
+                </div>
+                <input type="number" class="form-control"  placeholder="Enter value" formControlName="personFee">
+              </div>
+<div>    
+  <button type="submit" class="submitbtn" >Submit</button>
+  <button type="button" class="submitbtn" routerLink="/regS" >View Profile</button>
+     
+</div>
+    
+</form>

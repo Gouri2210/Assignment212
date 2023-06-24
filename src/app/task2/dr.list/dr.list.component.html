@@ -1,0 +1,66 @@
+<!-- <div class="dispCard">
+<div class="card"  *ngFor ="let a of data"  >
+    <div class="card-body">
+      <h4>Name : {{a.fname}} {{a.lname}}</h4>
+      <h6>Email: {{a.email}}</h6>
+      <p>Phone : {{a.phone}}</p>
+      <div>
+        <ul>Education
+            <li>Degree1 : {{a.d1}}</li>
+            <li>Degree 2 : {{a.d2}}</li>
+            <li>Degree 3 : {{a.d3}}</li>
+        </ul>
+      </div>
+      <p><b>Fees</b></p>
+      <p>online fee : {{a.onlineFee}}</p>
+      <p>Personal fee:{{a.personFee}}</p>
+    </div>
+  </div>
+  </div> -->
+<br>
+<br>
+  <!-- <div class="HCard" *ngFor="let a of data">
+    <div class="FBox">
+        <div class="figBox">
+            <img class="fig rounded-circle" src="https://www.practostatic.com/images1-fabric/doctor/953743/dr-murali-reddy-61079374694e8.jpg" alt="Dr.Murali">
+        </div>
+      <div class="data">
+            <h3> Dr. {{a.fname}} {{a.lname}}</h3>
+           <p> {{a.d1}},{{a.d2}},{{a.d3}}</p>
+           <div class="time"> <img [src]="'/assets/img/noun_weighing-scale_2532008.png'" style="height: 30px;">  Next Slot: 11.00 AM</div>
+           
+        </div>
+    </div> -->
+<div *ngFor="let a of data" >
+    <table   class="boxTable" style="border: 2px solid black; " >
+      <tr>
+        <td>
+          <div class="figBox">
+            <img class="fig rounded-circle" src="https://www.practostatic.com/images1-fabric/doctor/953743/dr-murali-reddy-61079374694e8.jpg" alt="Dr.Murali">
+        </div>
+        </td>
+        <td>
+          <h3> Dr. {{a.fname}} {{a.lname}}</h3>
+          <p> {{a.d1}},{{a.d2}},{{a.d3}}</p>
+          <div class="time"> <img [src]="'/assets/img/noun_weighing-scale_2532008.png'" style="height: 30px;">  Next Slot: 11.00 AM</div>
+        </td>
+      </tr>
+      <tr>
+        <th>&nbsp;&nbsp;Experience</th>
+        <th>Fees</th>
+      </tr>
+      <tr>
+        <td>
+          {{experience}}
+        </td>
+        <td>
+          <b>{{a.onlineFee | currency :'INR'}}</b>&nbsp;&nbsp; Online Consult<br>
+          <b>{{a.personFee | currency :'INR'}}</b>&nbsp;&nbsp; In-Person Consult
+        </td>
+      </tr>
+    </table>
+
+</div>
+
+
+ 

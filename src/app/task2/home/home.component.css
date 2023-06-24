@@ -1,0 +1,33 @@
+
+.heading
+{
+  text-align: center;
+    color:black;
+    margin-top: 25px;
+}
+.imgDeco
+{
+    height: 300px;
+     margin-left: 450px;
+     margin-top: 25px;
+}
+
+.regBtn
+{
+    width: 250px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: #4CAF50;
+    
+    margin-left: 460px;
+}
+.logBtn
+{
+    width: 250px;
+    height: 50px;
+    border-radius: 50px;
+    margin-left: 460px;
+    
+    text-align: center;
+    border: 1px solid #466db6
+}
